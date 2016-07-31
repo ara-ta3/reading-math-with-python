@@ -1,5 +1,5 @@
 run: venv/bin/jupyter
-	$< notebook
+	PATH=venv/bin:$$PATH $< notebook
 
 install: venv/bin/pip
 	$< install -r requirements.txt
